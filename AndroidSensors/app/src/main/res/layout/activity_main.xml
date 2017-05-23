@@ -3,9 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ScrollView
-        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         android:id="@+id/content_scrollview"
         android:layout_centerHorizontal="true">
         <TextView
@@ -28,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="2"
-            android:id="@+id/ball_1">
+            android:id="@+id/value_x">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -49,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="2"
-            android:id="@+id/ball_2">
+            android:id="@+id/value_y">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -70,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="2"
-            android:id="@+id/ball_3">
+            android:id="@+id/value_z">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,13 +93,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/row2"
         android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
         android:layout_below="@id/row1">
         <FrameLayout
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="2"
-            android:id="@+id/ball_4">
+            android:id="@+id/value_max_x">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -118,7 +120,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_margin="5dp"
-            android:id="@+id/ball_5"
+            android:id="@+id/value_max_y"
             android:layout_weight="2">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -139,7 +141,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_margin="5dp"
-            android:id="@+id/ball_6"
+            android:id="@+id/value_max_z"
             android:layout_weight="2">
             <LinearLayout
                 android:layout_width="match_parent"
